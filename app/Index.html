@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="styles/main.css"/>
+  	<link rel="stylesheet" href="styles/main.css"/>
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css"/>
   </head>
   <body ng-app="app">
-    <div ng-controller="errorCtrl">
-    	<button ng-click='getData()'>$http.get</button>
+  	<div class="container">
+	    <div ng-controller="errorCtrl" class="jumbotron">
+	    	<h3>Simple example to show how to use AngularJS Interceptor</h3>
+	    	<button ng-click='getData()' class="btn btn-lg btn-primary">Click Me</button>
+	    	<h4>This will simulate a http GET failure by calling a non existing endpoint on this site.</h4>
+	    </div>
     </div>
 
     <script src="lib/angular/angular.js"></script>
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <script type="text/javascript" src="scripts/app.js"></script>
 
